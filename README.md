@@ -1,8 +1,8 @@
 # NaijaHacks Hackathon 2019
 
-##Team Bincom
+## Team Bincom
 
-###Team Members
+### Team Members
 
 -Ibrahim Aderinto, ib4real914@gmail.com
 -Jotham Okoye, charles.jotham@gmail.com
