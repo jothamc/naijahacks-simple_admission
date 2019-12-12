@@ -4,8 +4,8 @@
 
 ### Team Members
 
--Ibrahim Aderinto, ib4real914@gmail.com
--Jotham Okoye, charles.jotham@gmail.com
+- Ibrahim Aderinto, ib4real914@gmail.com
+- Jotham Okoye, charles.jotham@gmail.com
 
 # Problem
 
@@ -22,8 +22,8 @@ Angular, python, Django, Scikit-learn.
 
 # Benefit
 
-1. Ability to refer admission seekers to other close courses in the same university
-2. Refer admission seekers to other universities for chosen course or other close courses.
-3. Provide crucial information (like a reminder system) on when universities of interest or in region of interest are holding their post-jamb exams.
-4. Provide brief introductory information on all courses in all universities so that students can know a bit about what they want to study. 
-5. Provide crucial information on other things / opportunities the students can engage themselves with should they not gain admission. For instance, fully sponsored vocational training opportunity, online introductory courses to courses of interest, Jupeb programs and their closest locations.
+- Ability to refer admission seekers to other close courses in the same university
+- Refer admission seekers to other universities for chosen course or other close courses.
+- Provide crucial information (like a reminder system) on when universities of interest or in region of interest are holding their post-jamb exams.
+- Provide brief introductory information on all courses in all universities so that students can know a bit about what they want to study. 
+- Provide crucial information on other things / opportunities the students can engage themselves with should they not gain admission. For instance, fully sponsored vocational training opportunity, online introductory courses to courses of interest, Jupeb programs and their closest locations.
