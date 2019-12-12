@@ -27,3 +27,9 @@ Angular, python, Django, Scikit-learn.
 - Provide crucial information (like a reminder system) on when universities of interest or in region of interest are holding their post-jamb exams.
 - Provide brief introductory information on all courses in all universities so that students can know a bit about what they want to study. 
 - Provide crucial information on other things / opportunities the students can engage themselves with should they not gain admission. For instance, fully sponsored vocational training opportunity, online introductory courses to courses of interest, Jupeb programs and their closest locations.
+
+# Folder Directory
+
+    .
+    ├── Front End                 # Contains the front end files
+    ├── Back End                  # Contains the back end files
