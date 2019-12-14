@@ -104,30 +104,21 @@
 	</nav>
 
 	<div>
-		<p class="admit"><strong>Increase your chances of gaining admisssion into the right university for you</strong> </p> 
+		<p class="admit"><strong>Here are your results</strong> </p> 
 	</div>
 
 
 	<div>
-		<form class="inputForm" method="POST">
-		{% csrf_token %}
-
-		{{form.as_p}}
-
-		<button class="btn btn-primary btn-default" type="submit">Submit</button>
-		</form>
-
-		<div class="referal">
-			<p>Course Name</p>
-			<p>University Name</p>
-			<p>Social Media handles</p>
-		</div>
-
+		
+		{% for key,item in results.items %}
+			<p>{{key}} : {{item}}</p>
+		{% endfor %}
+			
 	</div>
 
 	<footer>
 			<div class="ftform">
-			<form action="">
+			<form action="/action_page.php">
 				<div class="form-group">
 					<label for="name" color:"white">Full name:</label>
 					<input type="text" class="form-control" id="email">
