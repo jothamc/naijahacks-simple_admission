@@ -95,6 +95,8 @@ def Suggest(request):
 		# return render(request,"results.html",{"form":form})
 
 
+
+
 def Results(request):
 	post = request.POST
 	course = all_courses[int(post["course"])]
