@@ -4,9 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.password_validation import validate_password
 
 from .models import User
-# ,Suggest
-# from clients.models import Client
-# from riders.models import Rider
+
 
 # Create your views here.
 #Have views/models that handle Clients and Riders different or use the User model with the 'is_rider' field?
@@ -59,9 +57,9 @@ ssce_dict = {
 class suggestForm(forms.Form):
 	"""suggestForm definition."""
 
-	def ssce_tuple(ssce_list):
+	def ssce_tuple(ssce_dict):
 		all_ssce = []
-		for i,j in ssce_list.items():
+		for i,j in ssce_dict.items():
 			all_ssce.append(tuple([j,i]))
 		return tuple(all_ssce)
 
@@ -94,6 +92,8 @@ def Suggest(request):
 		return Results(request)
 		# return render(request,"results.html",{"form":form})
 
+import json
+universities_courses = json.loads( open("fed_universities_and_courses.json").read() )
 
 def Results(request):
 	post = request.POST
@@ -119,8 +119,17 @@ def Results(request):
 		"SSCE 6":post["ssce_6"],
 		"SSCE 7":post["ssce_7"],
 		"SSCE 8":post["ssce_8"],
+		"universities": course_check(chosen_course),
 		}
 	return render(request,"results.html",{"results":results})
+
+
+def course_check(course):
+	universities = []
+	for i in universities_courses:
+		if course in universities_courses[i]:
+			universities.append(i)
+	return universities
 
 def jamb_score_check(jamb_score,school,course):
 	if jamb_score >= school.course.cut_off_score:
