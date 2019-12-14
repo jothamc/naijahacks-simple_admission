@@ -94,8 +94,8 @@ def Suggest(request):
 		return Results(request)
 		# return render(request,"results.html",{"form":form})
 
-
-
+import json
+universities_courses = json.loads( open("fed_universities_and_courses.json").read() )
 
 def Results(request):
 	post = request.POST
@@ -123,6 +123,14 @@ def Results(request):
 		"SSCE 8":post["ssce_8"],
 		}
 	return render(request,"results.html",{"results":results})
+
+
+def course_check(course):
+	universities = []
+	for i in universities_courses:
+		if course in universities[i]:
+			universities.append(i)
+	return universities
 
 def jamb_score_check(jamb_score,school,course):
 	if jamb_score >= school.course.cut_off_score:
